@@ -1,0 +1,26 @@
+# --- Web / API ---
+fastapi==0.115.12
+uvicorn==0.34.1
+
+# --- LLM / Agent / Orchestration ---
+openai==1.75.0
+langchain==0.3.23
+langchain-core==0.3.55
+langchain-community==0.3.21
+langchain-openai==0.3.14
+langchain-google-genai==2.1.3
+langchain-chroma==0.2.3
+langsmith==0.1.147
+litellm==1.67.0.post1
+tiktoken==0.9.0
+
+# --- Vector DB / Embedding runtime ---
+chromadb==0.6.3
+chroma-hnswlib==0.7.6
+onnxruntime==1.21.1
+
+
+
+# --- UI (如需要) ---
+gradio==3.50.2
+
