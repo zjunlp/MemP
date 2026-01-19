@@ -37,8 +37,9 @@ In MemP, we support two strategies for building procedural memory: one construct
 
 ```bash
 git clone https://github.com/zjunlp/MemP
-cd ProceduralMem
 pip install -r requirements.txt
+cd ProceduralMem
+
 
 ```
 
