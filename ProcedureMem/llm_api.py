@@ -2,9 +2,13 @@ import time
 from openai import OpenAI
 import json
 from retry import retry
-API_KEY = "YOUR_API_KEY"
-API_BASE = "YOUR_API_BASE"
-MODEL_NAME = ""
+import os
+
+API_KEY = os.getenv("API_KEY")
+API_BASE = os.getenv("API_BASE_URL")
+EMBEDDING_MODEL_KEY = os.getenv("EMBEDDING_MODEL_KEY")
+EMBEDDING_MODEL_BASE_URL = os.getenv("EMBEDDING_MODEL_BASE_URL")
+MODEL_NAME = os.getenv("MODEL_NAME")
 TEMPERATURE = 0.2
 TOP_P = 1
 MAX_TOKENS = 4096
@@ -38,8 +42,8 @@ from langchain_openai import OpenAIEmbeddings
 def get_embedding_model():
     embedding = OpenAIEmbeddings(
         model="text-embedding-3-small",
-        openai_api_key="YOUR_API_KEY",
-        openai_api_base="YOUR_API_BASE",
+        openai_api_key=EMBEDDING_MODEL_KEY,
+        openai_api_base=EMBEDDING_MODEL_BASE_URL,
         max_retries=10
     )
     return embedding

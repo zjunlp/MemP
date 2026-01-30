@@ -37,13 +37,19 @@ In MemP, we support two strategies for building procedural memory: one construct
 
 ```bash
 git clone https://github.com/zjunlp/MemP
-pip install -r requirements.txt
 cd ProceduralMem
-
+pip install -r requirements.txt
 
 ```
 
+After installed, init neccessary  Environment Variables
 
+```bash
+export OPENAI_API_KEY=YOUR_API_KEY
+export OPENAI_API_BASE=YOUR_API_BASE_URL
+export EMBEDDING_MODEL_KEY=YOUR_EMBEDDING_MODEL_KEY
+export EMBEDDING_MODEL_BASE_URL=YOUR_EMBEDDING_MODEL_BASE_URL
+```
 
 ## ✏️Offline Running
 ```bash
